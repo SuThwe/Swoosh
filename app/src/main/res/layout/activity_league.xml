@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/swooshlogo" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/mensLeague"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -38,6 +38,7 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="onMensClicked"
         android:text="Mens"
         android:textColor="@android:color/white"
         android:textOff="Mens"
@@ -49,7 +50,7 @@
         tools:text="Mens" />
 
     <ToggleButton
-        android:id="@+id/toggleButton4"
+        android:id="@+id/womensLeague"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -57,6 +58,7 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="onWomensClicked"
         android:text="Womens"
         android:textColor="@android:color/white"
         android:textOff="Womens"
@@ -65,11 +67,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/mensLeague"
         tools:text="Womens" />
 
     <ToggleButton
-        android:id="@+id/toggleButton5"
+        android:id="@+id/coedLeague"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -77,6 +79,7 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="onCoEdClicked"
         android:text="Co-ed"
         android:textColor="@android:color/white"
         android:textOff="Co-ed"
@@ -85,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton4"
+        app:layout_constraintTop_toBottomOf="@+id/womensLeague"
         tools:text="Co-ed" />
 
     <TextView
