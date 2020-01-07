@@ -108,6 +108,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="leagueNextClicked"
         android:text="NEXT"
         android:textColor="@android:color/white"
         android:textSize="16sp"
