@@ -50,26 +50,28 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBeginnerClicked"
             android:text="Beginner"
             android:textColor="@android:color/white"
             android:textOff="Beginner"
             android:textOn="Beginner" />
 
         <ToggleButton
-            android:id="@+id/toggleButton9"
+            android:id="@+id/ballerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBallerClicked"
             android:text="Baller"
             android:textColor="@android:color/white"
             android:textOff="Baller"
@@ -77,12 +79,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/getStartedBtn"
+        android:id="@+id/skillFinishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinishSkillClicked"
         android:text="FINISH"
         android:textColor="@android:color/white"
         android:textSize="16sp"
